@@ -1,0 +1,26 @@
+/* Center the images and add some space between them */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Style the images to have a maximum width of 50% of the screen width */
+  .images img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  /* Add some padding and margin to the header and footer */
+  header, footer {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the footer text */
+  footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+  
