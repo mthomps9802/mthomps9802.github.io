@@ -4,7 +4,7 @@ Welcome to my personal portfolio website built with **React** and **Tailwind CSS
 
 ## 🚀 Live Website
 
-👉 [Visit Here](https://mthomps9802.github.io/)
+👉 [My Webfolio](https://mthomps9802.github.io/)
 
 ---
 
