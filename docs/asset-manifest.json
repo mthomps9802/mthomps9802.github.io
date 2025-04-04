@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.597189f9.css",
+    "main.js": "/static/js/main.e0fa2fce.js",
+    "static/js/453.021eb80b.chunk.js": "/static/js/453.021eb80b.chunk.js",
+    "static/media/aws_logo.png": "/static/media/aws_logo.572d50e964e2a886590f.png",
+    "static/media/css3_logo.png": "/static/media/css3_logo.ff1af5b2ddda96065cae.png",
+    "static/media/tailwind_logo.png": "/static/media/tailwind_logo.5244e663848d99ee0291.png",
+    "static/media/php_logo.png": "/static/media/php_logo.842ef02b41f2b4a40201.png",
+    "static/media/golang_logo.png": "/static/media/golang_logo.6a3cd1884425f3b03c7d.png",
+    "static/media/java_logo.png": "/static/media/java_logo.6c64373d3b7415758078.png",
+    "static/media/sql_logo.png": "/static/media/sql_logo.17ec01314179e9a8ab58.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.597189f9.css.map": "/static/css/main.597189f9.css.map",
+    "main.e0fa2fce.js.map": "/static/js/main.e0fa2fce.js.map",
+    "453.021eb80b.chunk.js.map": "/static/js/453.021eb80b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.597189f9.css",
+    "static/js/main.e0fa2fce.js"
+  ]
+}
