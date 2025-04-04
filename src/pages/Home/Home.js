@@ -31,8 +31,9 @@ const Home = () => {
     autoplaySpeed: 2000,
     arrows: true,
   };
-
+  console.log("Home component is rendering!");
   return (
+    
     <div className="flex items-center justify-center min-h-screen bg-black text-white px-6">
       <div className="flex items-center gap-8 max-w-3xl w-full">
         {/* Left Side - Name & Description */}
