@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
-import htmlLogo from "../../assets/html5_logo.png";  // Replace with actual paths
+import htmlLogo from "../../assets/html5_logo.png";  
 import cssLogo from "../../assets/css3_logo.png";
 import jsLogo from "../../assets/javascript_logo.png";
 import reactLogo from "../../assets/react_logo.png";
@@ -31,7 +31,6 @@ const Home = () => {
     autoplaySpeed: 2000,
     arrows: true,
   };
-  console.log("Home component is rendering!");
   return (
     
     <div className="flex items-center justify-center min-h-screen bg-black text-white px-6">
@@ -40,10 +39,10 @@ const Home = () => {
         <div className="w-2/3 text-left">
           <h1 className="text-6xl font-extrabold">Mark A. Thompson,</h1>
           <p className="text-lg mt-4 max-w-md">
-          Hello! I'm Mark, a passionate software engineer
+          Hello! I'm Mark, a passionate software engineer/developer
            with a knack for creating innovative solutions.
             I thrive on challenges and love to learn new technologies.
-             I am always eager to expand my skill set and take on new projects and 
+            I have a keen interest in cybersecurity and I am always eager to expand my skill set and take on new projects and 
              I hope to leverage my skillset to make a positive impact in the world.
           </p>
           <div className="mt-4 flex space-x-4">
