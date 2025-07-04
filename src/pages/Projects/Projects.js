@@ -1,54 +1,88 @@
-// pages/Projects.jsx
+import React, { useState } from 'react';
 import reactIcon from "../../assets/react_logo.png";
-/*
-import jsIcon from '../../assets/javascript_logo.png';
-import pyIcon from '../../assets/python_logo.png';
-import htmlIcon from "../../assets/html5_logo.png";  // Replace with actual paths
-import cssIcon from "../../assets/css3_logo.png";
-import awsIcon from "../../assets/aws_logo.png";
-import dockerIcon from "../../assets/docker_logo.png";
-import phpIcon from "../../assets/php_logo.png";
-import goIcon from "../../assets/golang_logo.png";
-import sqlIcon from "../../assets/sql_logo.png";
-import githubIcon from "../../assets/github_logo.png";
-import javaIcon from "../../assets/java_logo.png";
-import tailwindIcon from "../../assets/tailwind_logo.png";
-*/
+import pythonIcon from "../../assets/python_logo.png";  
+// Add other imports as needed (e.g., tailwindIcon, etc.)
 import ProjectCard from '../../components/ProjectCard';
 
+
 export default function Projects() {
+  const [activeTag, setActiveTag] = useState(null);
+
+  const allTags = ['React', 'Tailwind', 'Javascript', 'CSS', 'HTML', 'Python', 'PHP'];
+
   const projects = [
     {
       title: 'React Portfolio',
-      description: 'A Vercel-like developer portfolio website template made with React and Tailwind.',
-      tags: ['React', 'Tailwind', 'Javascript'],
-      type: 'Website Template',
-      duration: 'Placeholder',
-      date: 'Placeholder',
+      description: `A Vercel-like developer portfolio website
+       template made with React and Tailwind
+        to display projects, skills, and experience.`,
+      tags: ['React', 'Tailwind', 'Javascript', 'HTML'],
+      type: 'Webfolio Page',
+      duration: '3   month',
+      date: 'May 2025',
       icon: reactIcon,
-    }
-    ,
-    // Add more projects as needed
-    {
-      title: 'React Portfolio',
-      description:
-        'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-      tags: ['React', 'Tailwind', 'Javascript'],
-      type: 'Website Template',
-      duration: 'Placeholder',
-      date: 'Placeholder',
-      icon: reactIcon,
+      progress: 'In Progress'
     },
+    {
+      title: 'Sunset Finder',
+      description: `Captured real-time sunset images
+       from our four live-stream cameras
+        and classified them by season
+         and date through an SVM algorithm
+          with 78% accuracy.`,
+      tags: ['Python', 'HTML', 'PHP', 'CSS', 'Javascript'],
+      type: 'Sunset Detection System',
+      duration: '5 months',
+      date: 'May 2023',
+      icon: pythonIcon,
+      progress: 'Completed'
+    },
+    {
+      title: 'Yelp Business Recommender',
+      description: `Built a Python recommendation engine on 6 million plus
+       Yelp businesses using extensible hash tables and TF-IDF
+        to boost relevance by 30%.
+         Wrapped it in an intuitive Flask + HTML/CSS/JS UI.`,
+      tags: ['Python'],
+      type: 'Business Recommender',
+      duration: '5 months',
+      date: 'Nov 2023',
+      icon: pythonIcon,
+      progress: 'Completed'
+    }
   ];
 
+  const filteredProjects = activeTag
+    ? projects.filter(project => project.tags.includes(activeTag))
+    : projects;
+
   return (
-    <div className="min-h-screen bg-black text-white px-6 pt-28 pb-10">
+    <div className="min-h-screen bg-black text-white px-8 pt-28 pb-10">
       <h1 className="text-4xl font-bold text-center mb-10">Projects</h1>
+
+      {/* Tag Buttons */}
+      <div className="flex flex-wrap justify-center gap-3 mb-10">
+        {allTags.map(tag => (
+          <button
+            key={tag}
+            onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+            className={`px-4 py-1 rounded-full border text-sm transition-all ${
+              activeTag === tag
+                ? 'bg-white text-black border-white'
+                : 'bg-neutral-900 text-white border-neutral-700 hover:bg-neutral-800'
+            }`}
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
+
+      {/* Project Cards */}
       <div className="flex flex-wrap gap-6 justify-center">
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
     </div>
   );
-};
+}
