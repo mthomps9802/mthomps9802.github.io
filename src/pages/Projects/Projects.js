@@ -18,7 +18,6 @@ export default function Projects() {
         to display projects, skills, and experience.`,
       tags: ['React', 'Tailwind', 'Javascript', 'HTML'],
       type: 'Webfolio Page',
-      duration: '3   month',
       date: 'May 2025',
       icon: reactIcon,
       progress: 'In Progress'
@@ -32,7 +31,6 @@ export default function Projects() {
           with 78% accuracy.`,
       tags: ['Python', 'HTML', 'PHP', 'CSS', 'Javascript'],
       type: 'Sunset Detection System',
-      duration: '5 months',
       date: 'May 2023',
       icon: pythonIcon,
       progress: 'Completed'
@@ -43,9 +41,8 @@ export default function Projects() {
        Yelp businesses using extensible hash tables and TF-IDF
         to boost relevance by 30%.
          Wrapped it in an intuitive Flask + HTML/CSS/JS UI.`,
-      tags: ['Python'],
+      tags: ['Python', 'HTML', 'CSS', 'JS'],
       type: 'Business Recommender',
-      duration: '5 months',
       date: 'Nov 2023',
       icon: pythonIcon,
       progress: 'Completed'
