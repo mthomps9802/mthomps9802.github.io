@@ -13,6 +13,7 @@ import sqlIcon from "../../assets/sql_logo.png";
 import githubIcon from "../../assets/github_logo.png";
 import javaIcon from "../../assets/java_logo.png";
 import tailwindIcon from "../../assets/tailwind_logo.png";
+import typescriptIcon from "../../assets/typescript_logo.png";
 
 export default function Skills() {
   const programmingLanguages = [
@@ -23,7 +24,8 @@ export default function Skills() {
     { name: 'Java', icon: javaIcon, glowColor: "#007396" },     
     { name: 'PHP', icon: phpIcon, glowColor: "#8892BF" },       
     { name: 'Go', icon: goIcon, glowColor: "#00ADD8" },         
-    { name: 'SQL', icon: sqlIcon, glowColor: "#003B57" },       
+    { name: 'SQL', icon: sqlIcon, glowColor: "#003B57" },
+    { name: 'TypeScript', icon: typescriptIcon, glowColor: "#002B47" },        
   ];
   
 
@@ -45,7 +47,7 @@ export default function Skills() {
         <h1 className="text-4xl font-bold text-center mb-10">Skills</h1>
 
           <SkillCategory title="Programming Languages" skills={programmingLanguages} />
-          <SkillCategory title="Libraries" skills={Libraries} />
+          <SkillCategory title="Frameworks & Libraries" skills={Libraries} />
           <SkillCategory title="Tools and Technologies" skills={Tools} />
         </div>
       </div>
